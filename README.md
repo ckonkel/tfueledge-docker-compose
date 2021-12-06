@@ -5,7 +5,7 @@ Curent State - Manual
 
 Desired State - Automated, with uptime, downtime reporting, web interface... more things.
 
-## Migration of data from exsiting
+## Migration of data from existing
 
 ### Windows
 
