@@ -13,8 +13,10 @@ If you already have a single edge node running or multple nodes running in Windo
 
 for each instance copy this directory/file from:
 
-`C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecast\ldb`
-`C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecast\key`
+```
+C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecast\ldb
+C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecast\key
+```
 
 to this folder that hosts your continer volume:
 
@@ -24,8 +26,10 @@ AND
 
 for each instance copy these directories from:
 
-`C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecore\mainnet\db`
-`C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecore\mainnet\key`
+```
+C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecore\mainnet\db
+C:\Users\Someuser\AppData\Roaming\Theta Edge Node\ThetaEdgeNode\edgecore\mainnet\key
+```
 
 to this folder that hosts your continer volume:
 
