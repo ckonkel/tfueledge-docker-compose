@@ -1,0 +1,43 @@
+# NOTES: Add addtional containers as needed ...edgenode003, edgenode004...
+#        Make sure to update ports and data volumes name when manually adding addtional continers.
+# TODO: automate the node count and build using some build tool, manually updated for now
+services:
+  edgenode001:
+    restart: always
+    container_name: edgenode001
+    hostname: edgenode001.docker
+    environment:
+      - EDGELAUNCHER_CONFIG_PATH=/edgelauncher/data/mainnet
+      - PASSWORD=changeme123!
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      # target: edgenode001
+      # args:
+    ports:
+      - 127.0.0.1:15001:15888
+      - 127.0.0.1:17001:17888
+    volumes:
+      - type: bind
+        source: ./node001-0xPARTIALADDRESSHASHGOESHERE1-mainnet
+        target: /edgelauncher/data/mainnet
+
+  edgenode002:
+    restart: always
+    container_name: edgenode002
+    hostname: edgenode002.docker
+    environment:
+      - EDGELAUNCHER_CONFIG_PATH=/edgelauncher/data/mainnet
+      - PASSWORD=changeme123!
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      # target: edgenode002
+      # args:
+    ports:
+      - 127.0.0.1:15002:15888
+      - 127.0.0.1:17002:17888
+    volumes:
+      - type: bind
+        source: ./node002-0xPARTIALADDRESSHASHGOESHERE2-mainnet
+        target: /edgelauncher/data/mainnet
